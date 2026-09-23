@@ -3,7 +3,12 @@ name: jiutui-monitor
 on:
   schedule:
     - cron: '*/10 * * * *'   # 每 10 分钟检查一次
-  workflow_dispatch:          # 支持手动触发
+  workflow_dispatch:
+    inputs:
+      test_notify:
+        description: '勾选则发送一条测试通知（验证微信/邮件通道）'
+        type: boolean
+        default: false
 
 permissions:
   contents: write             # 允许把 state.json 回推仓库
@@ -21,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run monitor
+      - name: Run
         env:
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           SERVERCHAN_SENDKEY: ${{ secrets.SERVERCHAN_SENDKEY }}
@@ -30,9 +35,15 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           MAIL_TO: ${{ secrets.MAIL_TO }}
-        run: python monitor.py --once
+        run: |
+          if [ "${{ github.event.inputs.test_notify }}" = "true" ]; then
+            python monitor.py --test-notify
+          else
+            python monitor.py --once
+          fi
 
       - name: Commit state
+        if: github.event.inputs.test_notify != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
