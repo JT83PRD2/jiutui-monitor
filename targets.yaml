@@ -1,0 +1,95 @@
+# 保研九推监控目标清单
+# name: 学校-单位；url: 该单位的「通知公告/招生信息」列表页（不是单条新闻详情页）
+# 全局关键词：链接文本或 href 命中任一即视为候选
+keywords: [推免, 九推, 预推免, 推荐免试, 预报名, 接收, 拟录取, 复试, 夏令营, 考核, 推免生]
+
+targets:
+  # ============ 研招网 / 研究生院 ============
+  - name: 北京大学-研究生招生网
+    url: https://admission.pku.edu.cn/zsxx/
+  - name: 清华大学-研究生招生网
+    url: https://yz.tsinghua.edu.cn/
+  - name: 中国人民大学-研究生招生网
+    url: https://pgs.ruc.edu.cn/
+  - name: 复旦大学-研究生招生网
+    url: https://gsao.fudan.edu.cn/
+  - name: 上海交通大学-研究生招生网
+    url: https://yzb.sjtu.edu.cn/
+  - name: 浙江大学-研究生招生网
+    url: http://www.grs.zju.edu.cn/yjszs/
+  - name: 南京大学-研究生院
+    url: https://grawww.nju.edu.cn/
+  - name: 武汉大学-研究生院
+    url: https://gs.whu.edu.cn/
+  - name: 中山大学-研究生院
+    url: https://graduate.sysu.edu.cn/
+  - name: 厦门大学-招生办
+    url: https://zsb.xmu.edu.cn/
+  - name: 南开大学-研究生招生网
+    url: http://yzb.nankai.edu.cn/
+  - name: 吉林大学-研究生招生
+    url: https://yzb.jlu.edu.cn/
+  - name: 四川大学-研究生招生
+    url: https://yz.scu.edu.cn/
+  - name: 华东师范大学-研究生招生
+    url: https://yjszs.ecnu.edu.cn/
+  - name: 北京师范大学-研究生招生网
+    url: https://yz.bnu.edu.cn/
+
+  # ============ 院系官网（通知公告） ============
+  - name: 北京大学-政府管理学院
+    url: https://www.sg.pku.edu.cn/
+  - name: 北京大学-社会学系
+    url: http://www.shehui.pku.edu.cn/
+  - name: 清华大学-公共管理学院
+    url: https://www.sppm.tsinghua.edu.cn/
+  - name: 清华大学-社会科学学院
+    url: https://www.sss.tsinghua.edu.cn/
+  - name: 中国人民大学-公共管理学院
+    url: http://spap.ruc.edu.cn/
+  - name: 中国人民大学-社会学院
+    url: https://ssr.ruc.edu.cn/tzgg/
+  - name: 中国人民大学-劳动人事学院
+    url: http://slhr.ruc.edu.cn/
+  - name: 复旦大学-国际关系与公共事务学院
+    url: https://sirpa.fudan.edu.cn/
+  - name: 复旦大学-社会发展与公共政策学院
+    url: https://ssdpp.fudan.edu.cn/
+  - name: 上海交通大学-国际与公共事务学院
+    url: https://www.sipa.sjtu.edu.cn/
+  - name: 浙江大学-公共管理学院
+    url: http://www.spa.zju.edu.cn/
+  - name: 浙江大学-社会学系
+    url: http://sociology.zju.edu.cn/
+  - name: 南京大学-政府管理学院
+    url: https://public.nju.edu.cn/
+  - name: 南京大学-社会学院
+    url: https://sociology.nju.edu.cn/
+  - name: 武汉大学-政治与公共管理学院
+    url: http://www.pspa.whu.edu.cn/
+  - name: 武汉大学-社会学院
+    url: http://shxy.whu.edu.cn/
+  - name: 中山大学-政治与公共事务管理学院
+    url: https://sog.sysu.edu.cn/
+  - name: 中山大学-社会学与人类学学院
+    url: https://ssa.sysu.edu.cn/
+  - name: 厦门大学-公共事务学院
+    url: https://spa.xmu.edu.cn/
+  - name: 厦门大学-社会与人类学院
+    url: https://ssa.xmu.edu.cn/
+  - name: 南开大学-周恩来政府管理学院
+    url: https://zfxy.nankai.edu.cn/
+  - name: 吉林大学-行政学院
+    url: http://adm.jlu.edu.cn/
+  - name: 吉林大学-哲学社会学院
+    url: http://zsy.jlu.edu.cn/
+  - name: 四川大学-公共管理学院
+    url: https://ggglxy.scu.edu.cn/
+  - name: 华东师范大学-公共管理学院
+    url: https://spm.ecnu.edu.cn/
+  - name: 华东师范大学-社会发展学院
+    url: https://soci.ecnu.edu.cn/
+  - name: 北京师范大学-政府管理学院
+    url: http://www.sg.bnu.edu.cn/
+  - name: 北京师范大学-社会学院
+    url: https://soc.bnu.edu.cn/
